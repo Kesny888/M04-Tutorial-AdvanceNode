@@ -11,9 +11,13 @@ app.get('/', (req, res) => {
     res.sendFile('./views/index.html', {root: __dirname});
 });
 
-app.get('/about', (req, res) => {
+app.get('/login', (req, res) => {
     //res.send('<p>about</p>');
-    res.sendFile('./views/about.html', {root: __dirname});
+    res.sendFile('./views/login.html', {root: __dirname});
+});
+app.get('/signup', (req, res) => {
+    //res.send('<p>about</p>');
+    res.sendFile('./views/login.html', {root: __dirname});
 });
 
 //redirects
